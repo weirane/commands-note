@@ -1,6 +1,6 @@
-# ffmpeg
+# FFmpeg
 
-Ffmpeg 是一个视频处理工具。
+FFmpeg 是一个视频处理工具。
 
 ## 录屏
 

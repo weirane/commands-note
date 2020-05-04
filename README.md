@@ -2,5 +2,5 @@
 
 一些命令行工具的常用命令笔记。
 
-- [ffmpeg](./ffmpeg.md)
-- [imagemagick](./imagemagick.md)
+- [FFmpeg](./ffmpeg.md)
+- [ImageMagick](./imagemagick.md)

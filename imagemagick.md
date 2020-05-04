@@ -1,6 +1,6 @@
-# Imagemagick
+# ImageMagick
 
-Imagemagick 是一个图像处理工具。
+ImageMagick 是一个图像处理工具。
 
 ## 转换格式
 
