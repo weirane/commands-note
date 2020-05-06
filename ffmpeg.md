@@ -1,6 +1,6 @@
 # FFmpeg
 
-FFmpeg 是一个视频处理工具。
+FFmpeg 是一个视频、音频处理工具。
 
 ## 录屏
 
@@ -15,6 +15,25 @@ ffmpeg -i input1.mov -i input2.mov -filter_complex hstack output.mov
 ```
 
 需要上下拼接则将 `hstack` 改为 `vstack`。
+
+## 从视频中提取音频
+
+```sh
+ffmpeg -i input.flv -vn -acodec copy output.aac
+```
+
+- `-vn`: no video
+- `-acodec copy`: use the same audio stream that's already in there
+
+## 剪裁
+
+可用于音频和视频。
+
+```sh
+ffmpeg -ss 10 -t 6.5 -i input.mp3 output.mp3
+```
+
+从第 10 秒开始，持续 6.5 秒。
 
 ## 给视频去抖动
 
