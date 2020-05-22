@@ -9,7 +9,7 @@ mpv 是一个媒体播放器。
 
 ## 摄像头
 
-    mpv av://v4l2:/dev/video0 --profile=low-latency --untimed
+    mpv av://v4l2:/dev/video0 --osc=no --profile=low-latency --untimed
 
 ## 不使用终端控制器
 
