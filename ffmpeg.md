@@ -35,7 +35,14 @@ ffmpeg -f concat -safe 0 -i inputs -c copy output.mp4
 
 [更详细的文档][concat-doc]。
 
+或者使用 bash 写一个脚本 [vidcat]。
+
+```sh
+vidcat input1.mp4 input2.mp4 -o output.mp4
+```
+
 [concat-doc]: https://trac.ffmpeg.org/wiki/Concatenate
+[vidcat]: https://github.com/weirane/scripts/blob/449f1f63b65253a305b3/vidcat
 
 ## 从视频中提取音频
 
