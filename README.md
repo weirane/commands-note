@@ -1,4 +1,4 @@
-# tools-command
+# commands-note
 
 一些命令行工具的常用命令笔记。
 

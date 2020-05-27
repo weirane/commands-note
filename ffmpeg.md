@@ -16,6 +16,27 @@ ffmpeg -i input1.mov -i input2.mov -filter_complex hstack output.mov
 
 需要上下拼接则将 `hstack` 改为 `vstack`。
 
+## 连接视频
+
+先创建一个文件
+
+```sh
+cat > inputs <<EOF
+file '/path/to/input1.mp4'
+file './relative/input2.mp4'
+EOF
+```
+
+然后执行命令
+
+```sh
+ffmpeg -f concat -safe 0 -i inputs -c copy output.mp4
+```
+
+[更详细的文档][concat-doc]。
+
+[concat-doc]: https://trac.ffmpeg.org/wiki/Concatenate
+
 ## 从视频中提取音频
 
 ```sh
