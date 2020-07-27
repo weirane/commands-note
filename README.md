@@ -5,3 +5,4 @@
 - [FFmpeg](./ffmpeg.md)
 - [ImageMagick](./imagemagick.md)
 - [mpv](./mpv.md)
+- [GPG](./gpg.md)
