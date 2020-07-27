@@ -8,6 +8,14 @@ FFmpeg 是一个视频、音频处理工具。
 ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -i :0.0+0,0 output.mp4
 ```
 
+## 录音
+
+```sh
+ffmpeg -f pulse -i default output.wav
+```
+
+可使用 `pulsemixer` 设置 default 设备。
+
 ## 两个视频左右拼接
 
 ```sh
