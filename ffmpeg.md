@@ -18,13 +18,15 @@ ffmpeg -f pulse -i default output.wav
 
 ## 加速
 
-<https://trac.ffmpeg.org/wiki/How%20to%20speed%20up%20/%20slow%20down%20a%20video>
+[FFmpeg page][speed-ffmpeg]
 
 可用于音频和视频。加速音频 1.2 倍：
 
 ```sh
 ffmpeg -i input.mp3 -filter:a atempo=1.2 -vn output.mp3
 ```
+
+[speed-ffmpeg]: https://trac.ffmpeg.org/wiki/How%20to%20speed%20up%20/%20slow%20down%20a%20video
 
 ## 两个视频左右拼接
 
