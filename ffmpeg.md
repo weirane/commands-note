@@ -28,6 +28,23 @@ ffmpeg -i input.mp3 -filter:a atempo=1.2 -vn output.mp3
 
 [speed-ffmpeg]: https://trac.ffmpeg.org/wiki/How%20to%20speed%20up%20/%20slow%20down%20a%20video
 
+## 音频去噪
+
+可以使用 `afftdn` filter 进行去噪。[详细的说明][denoise]
+
+示例：
+
+```sh
+ffmpeg -i input.webm -af afftdn=nr=50:nf=-40 output.webm
+```
+
+- `-af` 表示使用 audio filter
+- `afftdn` 是 filter 的名字
+- `nr=50` 和 `nf=-40` 是 `afftdn` 的两个参数，其他参数可在 [详细的说明][denoise]
+    中查看，或者在 `man ffmpeg-filters` 中搜索 `afftdn`
+
+[denoise]: https://ffmpeg.org/ffmpeg-filters.html#afftdn
+
 ## 两个视频左右拼接
 
 ```sh
